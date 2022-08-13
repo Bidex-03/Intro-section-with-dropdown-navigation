@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+a{
+    text-decoration: none;
+    color: var(--Almost-Black);
+}
+
+
+/* Body code */
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Almost-White);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Navbar code */
+
+#header{
+    grid-column: span 12;
+    display: grid;
+    /* grid-template-columns: 200px auto 1fr; */
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    padding: 2rem;
+    height: 5rem;
+    /* background-color: var(--Medium-Gray); */
+}
+
+ul{
+    list-style: none;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    /* background: darkgray; */
+    grid-column: 2/4;
+    text-align: center;
+}
+
+.nav li{
+    /* background: skyblue; */
+}
+
+.logReg{
+    margin-left: auto;
+    grid-column: 4/-1;
+    /* background: salmon; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+}
